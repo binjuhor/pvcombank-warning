@@ -1,0 +1,26 @@
+@if $import == true {
+	@font-face{
+		font-family:'GlyphaVo-Bold';
+		src:url('../fonts/GlyphaVo-Bold.eot');
+		src:url('../fonts/GlyphaVo-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GlyphaVo-Bold.woff') format('woff'),
+		url('../fonts/GlyphaVo-Bold.ttf') format('truetype'),
+		url('../fonts/GlyphaVo-Bold.svg') format('svg');
+	}
+	@font-face{
+		font-family:'GlyphaVo';
+		src:url('../fonts/GlyphaVo.eot');
+		src:url('../fonts/GlyphaVo.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GlyphaVo.woff') format('woff'),
+		url('../fonts/GlyphaVo.ttf') format('truetype'),
+		url('../fonts/GlyphaVo.svg') format('svg');
+	}
+	@font-face{
+	font-family:'ITCErasVo-Demi';
+	src:url('../fonts/ITCErasVo-Demi.eot');
+	src:url('../fonts/ITCErasVo-Demi.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ITCErasVo-Demi.woff') format('woff'),
+	url('../fonts/ITCErasVo-Demi.ttf') format('truetype'),
+	url('../fonts/ITCErasVo-Demi.svg') format('svg');
+}
+}

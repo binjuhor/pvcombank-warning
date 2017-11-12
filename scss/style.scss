@@ -1,0 +1,105 @@
+@import 'bourbon'; // http://bourbon.io/
+
+@import '../partials/variables'; // colors, fonts etc...
+
+@import '../partials/mixins'; // custom mixins
+
+@import '../partials/layout'; // responsive grid and media queries
+
+@import '../partials/fonts';
+/* --------------------------------
+
+Primary style
+
+-------------------------------- */
+body{
+	font-family: $Gr;
+	font-size: 18px;
+	overflow-x:hidden!important;
+	position: relative;
+	@include font-smoothing;
+	background: #fff;
+	float: left;
+	width: 100vw;
+	height: 100vh;
+	a{
+		color: #0072bc;
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	.box-warning{
+		float: left;
+		max-width: 1024px;
+		min-height: 300px;
+		width: 50%;
+		position: absolute;
+		background: #ffc809;
+		box-sizing: border-box;
+		// border: 4px solid #0072bc;
+		padding: 20px;
+		@include RP(L){
+			width: 90%;
+			height: auto;
+		}
+		@include RP(L){
+			box-sizing:border-box;
+			padding-left: 5%;
+			padding-right: 5%;
+		}
+		@include center(xy);
+		p{
+			margin-bottom: 0px;
+			margin-top: 15px;
+			color: #414042;
+		}
+		.warning-text{
+			float: left;
+			width: 100%;
+			height: auto;
+			// text-align: justify;
+		}
+		.title-warning{
+			float: left;
+			width: 100%;
+			height: 100px;
+			padding-bottom: 10px;
+			margin-bottom: 20px;
+			border-bottom: 1px solid #fff;
+			.main-title{
+				float: left;
+				font-family: $ITC;
+				padding-left: 65px;
+				background: url(../images/warning-icon.png) no-repeat left center;
+				line-height: 51px;
+				font-size: 30px;
+				// margin-top: 30px;
+				position: relative;
+				@include center(y);
+				text-transform: uppercase;
+				color: #414042;
+				@include RP(S){
+					font-size: 18px;
+					padding-left:55px;				}
+
+			}
+			.logo{
+				float: right;
+				max-width: 40%;
+				position: relative;
+				@include center(y);
+				@include RP(S){
+					img{
+						width:100%;
+					}
+				}
+			}
+		}
+		.user-app{
+			p{
+				color: #0072bc;
+			}
+		}
+	}
+}
